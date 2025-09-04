@@ -1,4 +1,4 @@
-# Shop & Product Management App
+# Shop & Product Management App [Live Demo](https://shopslisting-rnt1.onrender.com/)
 
 A full-stack MERN (MongoDB, Express, React, Node.js) application where users can:
 - Register & login
@@ -62,10 +62,10 @@ PUT /api/products/:id → Update product
 DELETE /api/products/:id → Delete product
 
 
-# PORT=5000
-# MONGO_URI=mongodb://localhost
-# JWT_SECRET=supersecret_jwt_key_change_me
-# CLOUDINARY_CLOUD_NAME=your_cloud_name
-# CLOUDINARY_API_KEY=your_api_key
-# CLOUDINARY_API_SECRET=your_api_secret
-# CLIENT_ORIGIN=http://localhost:5173
+PORT=5000
+MONGO_URI=mongodb://localhost
+JWT_SECRET=supersecret_jwt_key_change_me
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+CLIENT_ORIGIN=http://localhost:5173
