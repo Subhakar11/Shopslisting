@@ -1,0 +1,11 @@
+import { Router } from 'express';
+import { auth } from '../middleware/auth.js';
+import { upload } from '../middleware/upload.js';
+import { createProduct, updateProduct } from '../controllers/productController.js';
+import { productValidators } from '../utils/validators.js';
+import { getProductById } from "../controllers/productController.js";
+const router = Router();
+router.get("/:id", getProductById);
+router.post('/', auth, upload.single('image'), productValidators, createProduct);
+router.put('/:id', auth, upload.single('image'), productValidators, updateProduct);
+export default router;
